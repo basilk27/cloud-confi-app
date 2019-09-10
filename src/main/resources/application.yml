@@ -1,0 +1,30 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: app-config-repo
+
+  cloud:
+    config:
+      server:
+        git:
+#          uri:  https://github.com/basil27/{spring.application.name}
+#          username: basilkiwanuka@icloud.com
+#          password: Zaq1!2@wsx
+#          force-pull: true
+
+#          repos:
+#            dev:
+#              pattern:
+#                - '*/development'
+#                - '*/staging'
+#              uri: https://github.com/basil27/development/cloud-config-repo
+#            staging:
+#              pattern:
+#                - '*/qa'
+#                - '*/production'
+#              uri: https://github.com/basil27/staging/cloud-config-repo
+
+#
+          uri: file://${user.home}/app-config-repo
